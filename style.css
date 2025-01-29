@@ -1,0 +1,224 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Home Section */
+#home {
+    background: #3498db;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#home h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+#portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 45%;
+    margin: 15px 0;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h3 {
+    margin-top: 0;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    /* Initially hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+    /* Hover effect: slightly enlarge */
+}
+
+/* When the button should be visible */
+#backToTop.show {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        width: 80%;
+        margin: 15px 0;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 28px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+}
